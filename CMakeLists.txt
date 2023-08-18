@@ -1,0 +1,5 @@
+cmake_minimum_requred(VERSION 3.22.0)
+project(MathPower)
+add_library(M4_L12_Task_2(dynamic_lib) SHARED LeaverLibraryDynamic.h LeaverLibraryDynamic.cpp)
+add_executable(Leaver.exe LeaverClient.cpp)
+target_link_libraries(Leaver.exe M4_L12_Task_2(dynamic_lib))
